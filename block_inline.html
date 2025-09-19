@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Element vs Container Level 예제</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            border: 2px dashed gray;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .element {
+            border: 2px solid blue;
+            padding: 5px;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        header,
+        footer,
+        nav,
+        section,
+        article,
+        aside {
+            border: 2px solid green;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Container Level 예제</h1>
+
+    <header>
+        <h2>Header 영역</h2>
+        <nav>
+            <p>Navigation 메뉴</p>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Section 영역</h2>
+            <article>
+                <h3>Article 제목</h3>
+                <p>Element Level 예제 텍스트</p>
+                <span class="element">span 요소</span>
+                <a href="#" class="element">링크 요소</a>
+            </article>
+            <aside>
+                <p>Aside 영역: 보조 콘텐츠</p>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <p>Footer 영역</p>
+    </footer>
+
+    <h1>Element Level 예제</h1>
+    <p class="element">단락(p) 요소</p>
+    <span class="element">span 요소</span>
+    <a href="#" class="element">링크(a) 요소</a>
+    <abbr title="HyperText Markup Language" class="element">HTML</abbr>
+</body>
+
+</html>
