@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Transform 데모</title>
+  <style>
+    .demo-box {
+      width: 100px;
+      height: 100px;
+      margin: 30px;
+      display: inline-block;
+      background: #4caf50;
+      color: #fff;
+      font-weight: bold;
+      line-height: 100px;
+      text-align: center;
+      border-radius: 12px;
+      transition: transform 0.5s;
+    }
+    .translate { transform: translate(40px, 20px); }
+    .scale { transform: scale(1.5, 0.7); }
+    .rotate { transform: rotate(30deg); }
+    .skew { transform: skew(20deg, 10deg); }
+    .matrix { transform: matrix(1, 0.3, 0.2, 1, 40, 30); }
+  </style>
+</head>
+<body>
+  <h2>Transform 속성 </h2>
+  <div class="demo-box translate">translate</div>
+  <div class="demo-box scale">scale</div>
+  <div class="demo-box rotate">rotate</div>
+  <div class="demo-box skew">skew</div>
+  <div class="demo-box matrix">matrix</div>
+</body>
+</html>

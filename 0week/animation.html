@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bouncing Ball Animation</title>
+    <style>
+        .ball {
+            width: 80px;
+            height: 80px;
+            background: #a259e6;
+            
+            border-radius: 50%;
+            
+            margin: 120px auto;
+            
+            animation: bounce 0.7s infinite alternate cubic-bezier(.5, 1.5, .5, 1);
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-120px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ball"></div>
+</body>
+
+</html>

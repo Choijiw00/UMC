@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>가운데 정렬 테스트</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #f1f5f9;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+
+        .stage {
+            background: #fff;
+            border: 2px dashed #cbd5e1;
+            height: 200px;
+            margin-top: 12px;
+            position: relative;
+        }
+
+        .box {
+            width: 120px;
+            height: 60px;
+            background: #3b82f6;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border-radius: 6px;
+        }
+
+        /* 1. text-align */
+        .text-align-parent {
+            text-align: center;
+        }
+
+        .text-align-parent .box {
+            display: inline-block;
+            margin-top: 70px;
+        }
+
+        /* 2. margin auto */
+        .margin-center .box {
+            margin: auto;
+            position: relative;
+            top: 70px;
+        }
+
+        /* 3. flex */
+        .flex-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* 4. translate */
+        .translate-center .box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* 5. grid */
+        .grid-center {
+            display: grid;
+            place-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>가운데 정렬 테스트</h1>
+
+    s
+
+    <h2>2. margin auto</h2>
+    <div class="stage margin-center">
+        <div class="box">CENTER</div>
+    </div>
+
+    <h2>3. flex</h2>
+    <div class="stage flex-center">
+        <div class="box">CENTER</div>
+    </div>
+
+    <h2>4. translate</h2>
+    <div class="stage translate-center">
+        <div class="box">CENTER</div>
+    </div>
+
+    <h2>5. grid</h2>
+    <div class="stage grid-center">
+        <div class="box">CENTER</div>
+    </div>
+</body>
+
+</html>

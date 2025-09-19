@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Background 속성 실습</title>
+    <style>
+        .bg-demo {
+            width: 400px;
+            height: 250px;
+            border: 2px solid #333;
+            margin: 40px auto;
+
+            background-image: url('C:/Users/sismp/OneDrive/Pictures/새 폴더 (2)/새 폴더 (3)/DSC00966.JPG');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .bg-shorthand {
+            width: 400px;
+            height: 250px;
+            border: 2px solid #333;
+            margin: 40px auto;
+
+            background: url('C:/Users/sismp/OneDrive/Pictures/새 폴더 (2)/새 폴더 (3)/DSC00966.JPG') no-repeat right bottom / contain;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="text-align:center;">background 개별 속성 예시</h2>
+    <div class="bg-demo"></div>
+
+    <h2 style="text-align:center;">background 축약형 예시</h2>
+    <div class="bg-shorthand"></div>
+</body>
+
+</html>
